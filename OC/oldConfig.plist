@@ -110,6 +110,22 @@
                     <key>Path</key>
                     <string>SSDT-XOSI.aml</string>
                 </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string>SSDT-DTPG.aml</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-DTPG.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string>SSDT-TB3.aml</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-TB3.aml</string>
+                </dict>
             </array>
             <key>Delete</key>
             <array>
@@ -375,10 +391,10 @@
                 <dict>
                     <key>AAPL,ig-platform-id</key>
                     <data>CQClPg==</data>
-                    <key>AAPL,slot-name</key>
-                    <string>Internal@0,2,0</string>
                     <key>device_type</key>
                     <string>VGA compatible controller</string>
+                    <key>hda-gfx</key>
+                    <string>onboard-1</string>
                     <key>model</key>
                     <string>Intel UHD Graphics 630 (Mobile)</string>
                 </dict>
@@ -935,6 +951,42 @@
                     <key>PlistPath</key>
                     <string>Contents/Info.plist</string>
                 </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>AMFIPass.kext</string>
+                    <key>Comment</key>
+                    <string>V1.4.1</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/AMFIPass</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>IOElectrify_10.15sdk.kext</string>
+                    <key>Comment</key>
+                    <string>V1.0.0</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/IOElectrify</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
             </array>
             <key>Block</key>
             <array>
@@ -1338,7 +1390,7 @@
                     <key>boot-args</key>
                     <string>keepsyms=1 igfxcflbklt=1 igfxrst=1 -cdfon -wegnoegpu</string>
                     <key>csr-active-config</key>
-                    <data>AAAAAA==</data>
+                    <data>/w8AAA==</data>
                     <key>prev-lang:kbd</key>
                     <data>emgtSGFuczoyNTI=</data>
                 </dict>
@@ -1352,6 +1404,7 @@
                 </array>
                 <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
                 <array>
+                    <string>csr-active-config</string>
                     <string>boot-args</string>
                 </array>
             </dict>
@@ -1397,7 +1450,7 @@
                 <key>AdviseFeatures</key>
                 <false/>
                 <key>MLB</key>
-                <string></string>
+                <string>C02051403QX0000A8</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
@@ -1411,9 +1464,9 @@
                 <key>SystemProductName</key>
                 <string>MacBookPro16,4</string>
                 <key>SystemSerialNumber</key>
-                <string></string>
+                <string>C02DVAYQMD6T</string>
                 <key>SystemUUID</key>
-                <string></string>
+                <string>0735A389-81FF-42C1-84DB-29C6F5866D72</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
